@@ -2,6 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+// import { RouterModule, Routes } from '@angular/router';
+//
+// const appRoutes:Routes = [
+//   {path: '/', component:}
+// ];
+
 import { SidebarModule } from 'ng-sidebar';
 
 import { AppComponent } from './app.component';
@@ -11,6 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Import the ButtonsModule
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
     declarations: [
@@ -25,7 +33,9 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
         BrowserAnimationsModule,
         ButtonsModule,
 
-        SidebarModule.forRoot()
+        SidebarModule.forRoot(),
+
+        FlexLayoutModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -1,151 +1,135 @@
-@charset "utf-8";
-
-/*Variables*/
-$fonts: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-
-$brand: #0273d4;
-$light-grey: #f6f6f6;
-$dark-grey: #545555;
-
-$white: #fff;
-/*Variables*/
-
-/*Core*/
-// * {
-//   box-sizing: border-box;
-//   margin: 0;
-//   padding: 0;
-// }
-
-html,
-body {
-  height: 100%;
-  width: 100%;
+.containerX {
+  border: solid 1px #b6b6b6;
 }
 
-body {
-  background: $light-grey;
-  color: $dark-grey;
-  font: 400 1em/1.25 $fonts;
+.colorNested, .colored, .coloredContainerX {
+  height:200px;
 }
 
-::selection {
-  background-color: $brand;
-  color: $white;
+md-card {
+  background-color: white;
 }
 
-a {
-  color: $brand;
-  text-decoration: none;
-
-  &:hover {
-    border-bottom: 1px dotted $brand;
-  }
+div.coloredContainerX > div, div.colorNested > div > div {
+  padding: 8px;
+  box-shadow: 0px 2px 5px 0 rgba(52, 47, 51, 0.63);
+  opacity: 0.9;
+  color: #fff;
+  text-align: center;
 }
 
-p {
-  margin-bottom: 1em;
+div.coloredContainerX > div:nth-child(1), div.colorNested > div > div:nth-child(1) {
+  background-color: #009688;
 }
 
-h1,
-h2 {
-  font-weight: 300;
+div.coloredContainerX > div:nth-child(2), div.colorNested > div > div:nth-child(2) {
+  background-color: #3949ab;
 }
 
-h1 {
-  border-bottom: 1px dotted $brand;
-  display: block;
-  margin: 2rem 0 1rem;
-  padding-bottom: 0.5rem;
+div.coloredContainerX > div:nth-child(3), div.coloredChildren > div:nth-child(3), div.colorNested > div > div:nth-child(3) {
+  background-color: #9c27b0;
 }
 
-h2 {
-  margin: 0.5rem 0;
-}
-/*Core*/
-
-ng-sidebar-container {
-  min-height: 100vh;
-  position: initial;
-  display: initial;
+div.coloredContainerX > div:nth-child(4), div.coloredChildren > div:nth-child(4), div.colorNested > div > div:nth-child(4) {
+  background-color: #b08752;
 }
 
-.loading {
-  padding: 1em;
+div.coloredContainerX > div:nth-child(5), div.coloredChildren > div:nth-child(5), div.colorNested > div > div:nth-child(5) {
+  background-color: #5ca6b0;
 }
 
-.demo {
-  height: 100%;
-  width: 100%;
+div.colored > div {
+  padding: 8px;
+  box-shadow: 0px 2px 5px 0 rgba(52, 47, 51, 0.63);
+  opacity: 0.9;
+  color: #fff;
+  text-align: center;
 }
 
-.demo-header {
-  align-items: center;
-  background: $brand;
-  box-shadow: 0 0.1em 1.5em rgba($dark-grey, 0.5);
-  color: $white;
-  display: flex;
-  padding: 1em;
+div.colored > div:nth-child(1), .one {
+  background-color: #009688;
 }
 
-  .demo-header__toggle {
-    background: transparent;
-    border: 0.15rem solid $white;
-    border-left: 0;
-    border-right: 0;
-    cursor: pointer;
-    font-size: 0;
-    height: 1.5rem;
-    margin-right: 1rem;
-    position: relative;
-    width: 2rem;
-
-    &::after {
-      background: $white;
-      content: '';
-      height: 0.15rem;
-      left: 0;
-      margin-top: -0.075rem;
-      position: absolute;
-      top: 50%;
-      width: 100%;
-    }
-  }
-
-ng-sidebar {
-  .demo-sidebar {
-    background-color: #fff;
-    padding: 2em 1em;
-
-    &.ng-sidebar--opened.ng-sidebar--over {
-      box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
-    }
-  }
+div.colored > div:nth-child(2), .two {
+  background-color: #3949ab;
 }
 
-.demo-sidebar {
-  background-color: #fff;
-  padding: 2em 1em;
-
-  &.ng-sidebar--opened.ng-sidebar--over {
-    box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
-  }
+div.colored > div:nth-child(3), .three {
+  background-color: #9c27b0;
 }
 
-.demo-contents {
-  padding: 0 2em;
+
+div.colored > div:nth-child(4), .four {
+  background-color: #8bc34a;
 }
 
-.demo-control {
-  background-color: $light-grey;
-  border: 1px solid $dark-grey;
-  cursor: pointer;
-  margin-bottom: 0.5em;
-  padding: 0.5em 2em;
-  transition: background-color 0.15s;
+div.colored > div:nth-child(5), .five {
+  background-color: #03A9F4;
+}
 
-  &:hover {
-    background-color: $dark-grey;
-    color: $white;
-  }
+div.colored > div:nth-child(6), .six {
+  background-color: #c9954e;
+}
+
+div.colored > div:nth-child(7), .seven {
+  background-color: #FF5722;
+}
+
+.hint {
+  margin:5px;
+  font-size:0.9em;
+  color: #a3a3a3;
+  margin-bottom:0;
+}
+
+.title {
+  margin:5px;
+  font-size:0.9em;
+  color: #5c5c5c;
+}
+
+.box {
+  border: solid 1px gray;
+}
+
+
+button.md-primary {
+  margin-left:25px;
+}
+
+.demo-content {
+  background-color: ghostwhite;
+}
+
+md-toolbar-row  button {
+  min-width: 150px;
+}
+
+div.colored.box.nopad > div {
+  padding: 0;
+}
+
+.intro {
+  margin-top: -52px;
+  margin-left: 15px;
+  color: #5c5c5c;
+}
+
+.version {
+  font-size:0.8em;
+  color: #aeaeae;
+  margin-top:20px;
+}
+
+
+
+.blocks {
+  min-width: 75px;
+  min-height: 50px;
+}
+
+
+html, body {
+      height:100%;
+      min-height:100vh;
 }

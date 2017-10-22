@@ -20,7 +20,6 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul> -->
-<div class="demo">
 <ng-sidebar-container>
       <ng-sidebar
         [(opened)]="_opened"
@@ -57,13 +56,13 @@
         <p>Steal the warm chair right after you get up.</p>
       </ng-sidebar>
 
-      <div ng-sidebar-content>
-        <header class="demo-header">
+      <div ng-sidebar-content fxLayout="row wrap" fxLayoutAlign="center initial">
+        <header class="demo-header" fxFlex>
           <button (click)="_toggleOpened()" class="demo-header__toggle">Toggle sidebar</button>
-          <span>ng-sidebar</span>
+          <span>MHS Admin Site</span>
         </header>
 
-        <section class="demo-contents">
+        <section class="content">
           <h1>Options</h1>
 
           <h2>Sidebar</h2>
@@ -115,7 +114,24 @@
           <p>Sit on human gnaw the corn cob but lounge in doorway yet ears back wide eyed. Hide when guests come over rub face on everything, fall asleep on the washing machine you call this cat food? for wake up wander around the house making large amounts of noise jump on top of your human's bed and fall asleep again for spread kitty litter all over house. If it fits, i sits eat grass, throw it back up stick butt in face. Peer out window, chatter at birds, lure them to mouth. Put toy mouse in food bowl run out of litter box at full speed inspect anything brought into the house, for eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap chase laser. Human give me attention meow spit up on light gray carpet instead of adjacent linoleum for hunt by meowing loudly at 5am next to human slave food dispenser thinking longingly about tuna brine. Asdflkjaertvlkjasntvkjn (sits on keyboard) stare at the wall, play with food and get confused by dust flop over need to chase tail damn that dog so mew get video posted to internet for chasing red dot. Groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked! cats go for world domination for stare at ceiling, or purr while eating yet kitty loves pigs.</p>
 
           <p>Text from <a href="http://www.catipsum.com/">Cat Ipsum</a>.</p>
+
+          <div fxLayout="row wrap" class="colored box nopad" >
+            <div fxFlex="none">     [flex="none"]       </div>
+            <div fxFlex>            [flex]              </div>
+            <div fxFlex="nogrow">   [flex="nogrow"]     </div>
+            <div fxFlex="grow">     [flex="grow"]       </div>
+
+            <div fxFlex="33.33%">   [flex="33.33%"]     </div>
+            <div fxFlex="33.33%">   [flex="33.33%"]     </div>
+            <div fxFlex="33.33%">   [flex="33.33%"]     </div>
+
+          </div>
+          <br><br>
         </section>
+
+        <footer class="crtp-adm-footer" fxFlex>
+          <span>2017</span>
+        </footer>
+
       </div>
     </ng-sidebar-container>
-</div>
